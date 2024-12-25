@@ -1,6 +1,5 @@
 import os.path
 import time
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -164,10 +163,10 @@ class WEMAKESCHOLARS:
             print(key+": "+value)
 
         p = pd.DataFrame([self.data])
-        p.to_csv(f"E:/FYPDS/Europe/UK/UK({dtype}).csv", mode='a', header=not
-                 os.path.exists(f"E:/FYPDS/Europe/UK/UK({dtype}).csv"), index=False)
-        p.to_csv("E:/FYPDS/Europe/UK/UK.csv", mode='a', header=not
-        os.path.exists("E:/FYPDS/Europe/UK/UK.csv"), index=False)
+        p.to_csv("path", mode='a', header=not
+                 os.path.exists("path"), index=False)
+        p.to_csv("path", mode='a', header=not
+        os.path.exists("path"), index=False)
 
 
 country = str(input("Enter Country: ")).title()
