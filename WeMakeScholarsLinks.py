@@ -25,8 +25,8 @@ class WEMAKESCHOLARSLINKS:
             print("Link: "+l.get_attribute('href'))
             self.data['Links'] = l.get_attribute('href')
             p = pd.DataFrame([self.data])
-            p.to_csv(f"E:/FYPDS/post/links/aus/{dtype}.csv", mode='a', header=not
-            os.path.exists(f"E:/FYPDS/post/links/aus/{dtype}.csv"), index=False)
+            p.to_csv(f"path", mode='a', header=not
+            os.path.exists(f"path"), index=False)
 
     def show_more(self):
         btn = self.driver.find_element(By.XPATH, '//input[@id="load-more"]')
